@@ -1,0 +1,24 @@
+APPLICATION_ID: helloTestxs
+service_description:
+  name: warst
+  version: 0.0.3
+  properties:
+    allowCrossApp: false
+servicecomb:
+  service:
+    registry:
+      address: http://127.0.0.1:30100
+      instance:
+        watch: false
+  rest:
+    address: 0.0.0.0:8080
+    servlet:
+      urlPattern: /rest/*
+#    servlet:
+#      urlPattern: /
+  #When a local project is deployed as a container outside a cluster, you need to delete all monitor and credentials comments and configure the AK/SK.
+  credentials:
+    accessKey: AONYCAOM6ZA0WGN532SE
+    secretKey: CL6FFLnHKona7gvbEzCx7baSDcP3UbePljhg5Pdh
+    akskCustomCipher: default
+    #project: cn-south-1
